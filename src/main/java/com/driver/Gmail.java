@@ -12,6 +12,9 @@ public class Gmail extends Email {
 
     }
 
+    public Gmail() {
+    }
+
     public void receiveMail(Date date, String sender, String message){
         // If the inbox is full, move the oldest mail in the inbox to trash and add the new mail to inbox.
         // It is guaranteed that:
@@ -29,37 +32,42 @@ public class Gmail extends Email {
     public String findLatestMessage(){
         // If the inbox is empty, return null
         // Else, return the message of the latest mail present in the inbox
+        return "1";
 
     }
 
     public String findOldestMessage(){
         // If the inbox is empty, return null
         // Else, return the message of the oldest mail present in the inbox
+        return "1";
 
     }
 
     public int findMailsBetweenDates(Date start, Date end){
         //find number of mails in the inbox which are received between given dates
         //It is guaranteed that start date <= end date
+        return 1;
 
     }
 
     public int getInboxSize(){
         // Return number of mails in inbox
-
+        return 1;
     }
 
     public int getTrashSize(){
         // Return number of mails in Trash
-
+        return 1;
     }
 
     public void emptyTrash(){
         // clear all mails in the trash
 
+
     }
 
     public int getInboxCapacity() {
         // Return the maximum number of mails that can be stored in the inbox
+        return 1;
     }
 }
